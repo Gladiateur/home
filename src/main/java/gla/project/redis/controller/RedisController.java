@@ -14,10 +14,8 @@ public class RedisController {
 
     @GetMapping("/test1")
     public void test(){
-        System.out.println("test redis haha");
         stringRedisTemplate.opsForValue().set("springboot21","hello world");
         String val = stringRedisTemplate.opsForValue().get("springboot21");
         System.out.println(val);
-
     }
 }

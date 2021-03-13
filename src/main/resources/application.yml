@@ -9,5 +9,11 @@ spring:
     host: 127.0.0.1
     port: 6379
     password: 123
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672  #15672 是http端口  5672是访问mq端口
+    username: guest
+    password: guest
+    connection-timeout: 20000
 server:
   port: 8081

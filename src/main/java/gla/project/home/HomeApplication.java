@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"gla.project.redis"})
+@ComponentScan(basePackages = {"gla.project.redis","gla.project.mq"})
 public class HomeApplication {
 
     public static void main(String[] args) {
