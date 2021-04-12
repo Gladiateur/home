@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"gla.project.redis","gla.project.mq"})
-@MapperScan("gla.project.mybatisplus.mapper")
+@ComponentScan(basePackages = {"gla.project.redis","gla.project.mq","gla.project.mybatisplus"})
 public class HomeApplication {
 
     public static void main(String[] args) {

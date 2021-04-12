@@ -1,10 +1,23 @@
 package gla.project.mybatisplus.model;
 
+import com.baomidou.mybatisplus.annotation.Version;
+
 public class User {
     private Long id;
     private String name;
     private Integer age;
     private String email;
+
+    @Version //乐观锁
+    private Integer version;
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
+    }
 
     public Long getId() {
         return id;
